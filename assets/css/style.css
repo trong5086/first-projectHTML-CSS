@@ -291,7 +291,56 @@ img .iconright{
     text-align: center;
     margin-top: -3px;
 }
+.places-list{
+    margin:32px -8px 0px;
+    padding-bottom: 64px;
+}
+.place-item{
+    float:left;
+    width:33.3333%;
+    padding:0px 8px;
+    
+    
+}
+.place-img{
+    width:100%;
+    display:block;
+}
+.place-img:hover{
+    opacity:0.6
+}
+.place-body{
+    font-size:15px;
+    color:#000;
+    background-color: #fff;
+    padding:16px
+}
+.place-header{
+    font-size:15px;
+    font-weight: 550;
+}
+.place-time{
+    margin-top:15px;
+    opacity: 0.60;
+}
+.place-description{
+    margin:15px 0px;
+    line-height:1.4;
+    
 
+    
+}
+.place-BTN{
+    text-decoration: none;
+    padding:11px 16px;
+    color:#fff;
+    background-color:#000;
+    display:inline-block;
+}
+.place-BTN:hover{
+    background-color:#ccc;
+    color:#000
+}
 #footer{
     
 }
