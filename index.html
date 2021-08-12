@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The band</title>
+    <link rel='shortcut icon' href='https://img.icons8.com/fluency/100/000000/music-band.png'/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/610ab90504.js" crossorigin="anonymous"></script>
 </head>
@@ -14,27 +15,17 @@
              <!-- Begin nav -->
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Band</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="#">
-                        More
-                        <img src="./assets/fonts/icons8_chevron_down_14px.png "  class="icondown">
-                    </a>
+                    <a href="#">More<i class="fas fa-caret-down icondown"></i></a>
                     <ul class="subnav">
                         <li>
-                            <a href="#">
-                                Merchandise
-                                <img src="./assets/fonts/icons8_right_14px.png "  class="iconright">
-                            </a>
+                            <a href="#">Merchandise </a>
                             <ul class="subnavMer">
                                 <li>
-                                    <a href="#">
-                                        Ticket
-                                <img src="./assets/fonts/icons8_right_14px.png "  class="iconright">
-
-                                    </a>
+                                    <a href="#">Ticket </a>
                                     <ul class="subnavTick">
                                         <li><a href="#">Coper</a></li>
                                         <li><a href="#">Silver</a></li>
@@ -43,11 +34,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        Guitar
-                                <img src="./assets/fonts/icons8_right_14px.png "  class="iconright">
-                                        
-                                    </a>
+                                    <a href="#">Guitar</a>
                                     <ul class="subnavGui">
                                         <li><a href="#">Common</a></li>
                                         <li><a href="#">Basic</a></li>
@@ -78,10 +65,10 @@
                 <div class="content-section">We had the best time playing at Venice Beach!</div>
             </div>
             </div>
-
+            <!-- Start content -->
          <div id="content">
              <!-- content about -->
-                <div class="section">
+                <div id="band" class="section">
                     <h2 class="section-heading">THE BAND </h2>
                     <p class="section-subheading">We love music</p>
                     <p class="section-about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -98,14 +85,13 @@
                             <p class="item-name">Name</p>
                             <img src="./assets/img/bandmember.jpg" alt="Name" class="item-img">
                         </div>
-                        <div class="clear-fix"></div>
                     </div>
                 </div>
               <!-- content about -->
               <!-- content tour -->
               <!-- Tickets -->
               <div class="tour-section">
-                  <div class="section">
+                  <div id="tour" class="section">
                       <h2 class="section-heading font-white">TOUR DATES</h2>
                       <p class="section-subheading font-white">Remember to book your tickets!</p>    
                       <div class="ticket">
@@ -123,7 +109,7 @@
                                     <h2 class="place-header">New York</h2>
                                     <p class="place-time">Fri 27 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-BTN js-button-buy-ticket">Buy Tickets</button>
+                                    <button class="BTN js-button-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
                             <div class="col col-third">
@@ -132,7 +118,7 @@
                                     <h2 class="place-header">Paris</h2>
                                     <p class="place-time">Sat 28 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-BTN js-button-buy-ticket">Buy Tickets</button>
+                                    <button class="BTN js-button-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
                             <div class="col col-third">
@@ -141,25 +127,60 @@
                                     <h2 class="place-header">San Francisco</h2>
                                     <p class="place-time">Sun 29 Nov 2016</p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                    <button class="place-BTN js-button-buy-ticket">Buy Tickets</button>
+                                    <button class="BTN js-button-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
-                            <div class="clear-fix"></div>
                         </div>
                     </div>
               </div>
               <!-- content tour -->
               <!-- content contact -->
-                <div class="section">
+                <div id="contact" class="section">
                     <h2 class="section-heading ">CONTACT</h2>
                     <p class="section-subheading">Fan? Drop a note!</p>  
-                
+                <div class="row contact-info-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                        <p><i class="fas fa-phone-alt"></i>Phone: +00 151515</p>
+                        <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half ">
+                                    <input type="text" placeholder="Name" required class="input-contact">       
+                                </div>
+                                <div class="col col-half ">
+                                    <input type="email" placeholder="Email" required class="input-contact">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-full ">
+                                    <input type="text" placeholder="Message" required class="input-contact contact-message mt-8">
+                                </div>
+                            </div>
+                            <input type="submit" class="BTN pul-right mt-16" value="SEND">
+                        </form>
+                    </div>
+                </div>
                 </div>
               <!-- content contact -->
+              <!-- End content -->
+              <div class="map">
+                  <img src="./assets/img/map.jpg" alt="">
+              </div>
          </div>
-
+            
          <div id="footer">
-        
+            <div class="social-list">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
          </div>
      </div>
      <div class="modal js-modal">

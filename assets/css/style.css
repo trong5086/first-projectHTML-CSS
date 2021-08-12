@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 /*
@@ -47,12 +48,46 @@ html{
 .col-half{
     width:50%;
 }
+.col-full{
+    width:100%;
+}
 .text-align-center{
     text-align: center!important;
 }
 .Fadeout{
     transition: 1s;
     opacity: 1;
+}
+.row::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.mt-8{
+    margin-top: 8px!important;
+}
+.mt-16{
+    margin-top: 16px!important;
+}
+.BTN{
+    text-decoration: none;
+    padding:11px 20px;
+    color:#fff;
+    background-color:#000;
+    display:inline-block;
+    cursor: pointer;
+    border:none;
+    font-size:15px
+}
+.BTN:hover{
+    background-color:#ccc;
+    color:#000
+}
+.pull-right{
+    float: right!important;;
+}
+.icondown{
+    margin-left: 4px!important;
 }
  /* main */
  #main{
@@ -67,11 +102,12 @@ html{
     left:0px;
     right:0px;
     z-index: 1;
+    font-weight:500
 }
 
 #nav{
- display: inline-block;
- font-size: 0px;
+    display: inline-block;
+
 }
 
 #nav > li
@@ -82,21 +118,22 @@ html{
 #nav li
 {
     position: relative;
-
+    list-style-type:none;
 }
 
 
    #nav> li >a
    {
     color: #fff;
+    text-transform: uppercase;
    }
 
 #nav li a{
     line-height: 46px;
     padding: 0px 24px;
-    text-decoration: none;
     display: block;
-    font-size: 16px;
+    text-decoration: none;
+    font-size: 15px;
 }
 
 #nav >li:hover> a,
@@ -184,10 +221,9 @@ html{
 
 }
 #header .search-btn .iconsearch{
- 
-    
     margin-top: 5px;
-    padding: 0px 20px;
+    padding: 0px 12px;
+    width: 61px;
 }
 
 #header .search-btn:hover{
@@ -234,7 +270,7 @@ img .iconright{
 {
     width: 800px;
     margin:0px auto;
-    padding: 64px 0px;
+    
 }
 
 
@@ -275,7 +311,9 @@ img .iconright{
     background-color: #000;
 }
 
-
+.section{
+    padding: 64px 0px 112px;
+}
 
 .ticket .book-ticket
 {
@@ -314,7 +352,6 @@ img .iconright{
 }
 .places-list{
     margin-top:32px;
-    padding-bottom: 64px;
 }
 
 .place-img{
@@ -345,18 +382,7 @@ img .iconright{
 
     
 }
-.place-BTN{
-    text-decoration: none;
-    padding:11px 16px;
-    color:#fff;
-    background-color:#000;
-    display:inline-block;
-    cursor: pointer;
-}
-.place-BTN:hover{
-    background-color:#ccc;
-    color:#000
-}
+
 .modal{
     position: fixed;
     top:0px;
@@ -446,11 +472,65 @@ img .iconright{
 .open{
     display: flex;
 }
-
-#footer{
+.contact-info-content{
+    margin-top:22px;
+}
+.contact-info{
+    line-height: 1.9;
     
 }
+.contact-info i[class*="fas fa"]{
+    font-size:18px;
+    width:30px
+}
+.contact-form{
+    font-size:15px;
+}
+.input-contact{
+    padding:12px 8px;
+    border: 1px solid #ccc;
+}
+.contact-message{
+    width:100%;
+}
+.submit-BTN{
+    float:right;
+    background-color: #000;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    padding: 12px 16px;
+}
+.submit-BTN:hover{
+    color: #000;
+    background-color: #ccc;
+}
 
+.map img{
+    width: 100%;
+   filter: grayscale(50%);
+}
+
+#footer{
+    padding:64px 16px;
+    text-align: center;
+}
+.social-list a{
+    color: rgba(0,0,0,0.5);
+    font-size:24px
+}
+.copyright a:hover,
+.social-list a:hover{
+    color: rgba(0,0,0,0.3)
+}
+.copyright{
+    margin: 15px 0px;
+    color: rgba(0,0,0,0.5);
+    font-size: 15px;
+}
+.copyright a{
+    color: rgba(0,0,0,0.5)
+}
 @keyframes modalFadeIn{
     from{
         transform:translateY(-140px)
